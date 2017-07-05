@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aha" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testboot-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testboot-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testboot-site" charset="UTF-8" />
+  </component>
+</project>
