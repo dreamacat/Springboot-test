@@ -30,13 +30,24 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.cat</groupId>
+            <artifactId>testboot-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 
     <build>
         <finalName>testboot-site</finalName>
         <plugins>
-
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

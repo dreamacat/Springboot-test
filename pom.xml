@@ -21,6 +21,7 @@
 
     <modules>
         <module>testboot-site</module>
+        <module>testboot-base</module>
     </modules>
 
     <properties>
@@ -76,11 +77,42 @@
                 <!-- <version>4.3.8.Final</version> -->
                 <version>3.3.0.GA</version>
             </dependency>
+            <!-- jdbc-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>4.2.5.RELEASE</version>
+            </dependency>
+            <!-- mybatis 服务 -->
+            <!--<dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.0.0</version>
+            </dependency>-->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+            <!-- druid 服务-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.13</version>
+            </dependency>
             <!--mysql驱动-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.34</version>
             </dependency>
+
             <!--处理常用的编码方法的工具类包,例如DES、SHA1、MD5、Base64,URL,Soundx等等  -->
             <dependency>
                 <groupId>commons-codec</groupId>
