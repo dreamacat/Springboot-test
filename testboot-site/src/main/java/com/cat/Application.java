@@ -14,7 +14,7 @@ public class Application {
 
     @RequestMapping("")
     public String greeting() {
-        System.out.println("love u a");
+        System.out.println("love u cat");
         return "Hello World!";
     }
     public static void main(String[] args) {
