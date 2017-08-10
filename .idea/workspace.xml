@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0afea258-8f54-45c3-aa32-a53cf1cb3a59" name="Default" comment="">
+    <list default="true" id="0afea258-8f54-45c3-aa32-a53cf1cb3a59" name="Default" comment="*">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,9 +45,10 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testboot-base/src/main/java/com/cat/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="55">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
+                <element signature="e#569#570#0" expanded="true" />
                 <element signature="e#604#605#0" expanded="true" />
               </folding>
             </state>
@@ -1199,7 +1200,7 @@
       <workItem from="1502094304408" duration="6475000" />
       <workItem from="1502110297559" duration="315000" />
       <workItem from="1502154762598" duration="9828000" />
-      <workItem from="1502354276134" duration="5221000" />
+      <workItem from="1502354276134" duration="5309000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1499248754855</created>
@@ -1271,11 +1272,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502361128856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="*">
+      <created>1502361255433</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1502361255433</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83530000" />
+    <option name="totallyTimeSpent" value="83618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1292,7 +1300,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35355988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50710225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50710225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3181818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1356,7 +1364,8 @@
     <MESSAGE value="添加Mybatis，待调整" />
     <MESSAGE value="测试git" />
     <MESSAGE value="* 由于pom中没有在build-resource里配置mapper.xml编译地址，导致target文件夹内没有编译的mapper，最后造成无法找到mapper映射错误&#10;* 调通Mybatis请求数据库并返回值（定义的resultMap）&#10;+ 添加lombok自动生成setter和getter方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="* 由于pom中没有在build-resource里配置mapper.xml编译地址，导致target文件夹内没有编译的mapper，最后造成无法找到mapper映射错误&#10;* 调通Mybatis请求数据库并返回值（定义的resultMap）&#10;+ 添加lombok自动生成setter和getter方法" />
+    <MESSAGE value="*" />
+    <option name="LAST_COMMIT_MESSAGE" value="*" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1526,7 +1535,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1502155518000" expanded="true" signature="531:582" ph="select * fro... sys_user" />
+            <marker date="1502361267000" expanded="true" signature="531:582" ph="select * fro... sys_user" />
           </folding>
         </state>
       </provider>
@@ -1674,7 +1683,7 @@
         <state relative-caret-position="150">
           <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
           <folding>
-            <marker date="1502356925000" expanded="true" signature="531:582" ph="select * fro... sys_user" />
+            <marker date="1502361267000" expanded="true" signature="531:582" ph="select * fro... sys_user" />
           </folding>
         </state>
       </provider>
@@ -1697,9 +1706,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testboot-base/src/main/java/com/cat/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="55">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
+            <element signature="e#569#570#0" expanded="true" />
             <element signature="e#604#605#0" expanded="true" />
           </folding>
         </state>
