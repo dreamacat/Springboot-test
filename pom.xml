@@ -21,6 +21,7 @@
 
     <modules>
         <module>testboot-site</module>
+        <module>testboot-base</module>
     </modules>
 
     <properties>
@@ -29,6 +30,8 @@
         <spring.version>4.3.2.RELEASE</spring.version>
         <spring.boot.version>1.4.0.RELEASE</spring.boot.version>
         <junit.version>4.12</junit.version>
+        <lombok.version>1.16.8</lombok.version>
+
     </properties>
 
 
@@ -76,11 +79,44 @@
                 <!-- <version>4.3.8.Final</version> -->
                 <version>3.3.0.GA</version>
             </dependency>
+            <!-- jdbc-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>4.2.5.RELEASE</version>
+            </dependency>
+            <!-- mybatis 服务 -->
+            <!--<dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.0.0</version>
+            </dependency>-->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <!--<version>3.3.0</version>-->
+                <version>3.2.8</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <!--<version>1.2.3</version>-->
+                <version>1.2.2</version>
+            </dependency>
+
+            <!-- druid 服务-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.13</version>
+            </dependency>
             <!--mysql驱动-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.34</version>
             </dependency>
+
             <!--处理常用的编码方法的工具类包,例如DES、SHA1、MD5、Base64,URL,Soundx等等  -->
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -97,6 +133,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>1.2.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
             </dependency>
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
@@ -127,39 +169,32 @@
     </dependencyManagement>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <!--<plugin>
-                    &lt;!&ndash; The plugin rewrites your manifest &ndash;&gt;
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                     <version>1.3.0.RELEASE</version>
-                    <configuration>&lt;!&ndash; 指定该Main Class为全局的唯一入口 &ndash;&gt;
-                        <mainclass>iflyer.IflyerApplication</mainclass>
-                        <layout>ZIP</layout>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>repackage</goal>&lt;!&ndash;可以把依赖的包都打包到生成的Jar包中&ndash;&gt;
-                            </goals>
-                            &lt;!&ndash;可以生成不含依赖包的不可执行Jar包&ndash;&gt;
-                            &lt;!&ndash; configuration>
-                              <classifier>exec</classifier>
-                            </configuration> &ndash;&gt;
-                        </execution>
-                    </executions>
-                </plugin>-->
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
 
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
