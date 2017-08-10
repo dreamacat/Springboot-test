@@ -7,37 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0afea258-8f54-45c3-aa32-a53cf1cb3a59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/config/DataSourceConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/config/MybatisConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/constant/LogConstant$CachesNames.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/constant/LogConstant$SpecialCharacter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/constant/LogConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/controller/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/base/IDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/base/impl/BaseDao$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/base/impl/BaseDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/base/impl/MybatisBaseDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/dialect/Dialect$Type.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/dialect/Dialect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/dialect/impl/MysqlDialect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/dialect/impl/OracleDialect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/model/RecordCount.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/user/IUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/user/UserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/user/impl/IUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/dao/user/impl/UserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/model/bean/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/service/user/IUserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/service/user/impl/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/com/cat/Application.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/com/cat/controller/HelloController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/com/cat/service/HelloService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/com/cat/service/impl/HelloServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-base/target/classes/com/cat/mapper/user/user-mapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/src/main/resources/resources/templates/helloWorld.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testboot-site/target/classes/resources/templates/helloWorld.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1229,7 +1199,7 @@
       <workItem from="1502094304408" duration="6475000" />
       <workItem from="1502110297559" duration="315000" />
       <workItem from="1502154762598" duration="9828000" />
-      <workItem from="1502354276134" duration="5091000" />
+      <workItem from="1502354276134" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1499248754855</created>
@@ -1294,11 +1264,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502357219880</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="* 由于pom中没有在build-resource里配置mapper.xml编译地址，导致target文件夹内没有编译的mapper，最后造成无法找到mapper映射错误&#10;* 调通Mybatis请求数据库并返回值（定义的resultMap）&#10;+ 添加lombok自动生成setter和getter方法">
+      <created>1502361128856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1502361128856</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83400000" />
+    <option name="totallyTimeSpent" value="83530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1315,7 +1292,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35355988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50710225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50710225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3181818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1327,7 +1304,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24271844" sideWeight="0.48863637" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24271844" sideWeight="0.48863637" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22617124" sideWeight="0.5113636" order="2" side_tool="true" content_ui="tabs" />
