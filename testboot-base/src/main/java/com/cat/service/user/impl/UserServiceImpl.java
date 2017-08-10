@@ -1,6 +1,6 @@
 package com.cat.service.user.impl;
 
-import com.cat.dao.user.IUserDao;
+import com.cat.dao.user.UserDao;
 import com.cat.model.bean.User;
 import com.cat.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ public class UserServiceImpl implements IUserService {
 
 
 	@Autowired
-	private IUserDao userDao;
+	private UserDao userDao;
 
 	@Override
 	public void addUser(String username, String password, String email, String serverInfo) throws Exception {
@@ -27,7 +27,7 @@ public class UserServiceImpl implements IUserService {
 
 	@Override
 	public User findUserByProperty(Map<String, String> params) throws Exception {
-		User user = new User();
+		User user ;
 		try{
 			user = userDao.findUserByProperty(params);
 		}catch (Exception e){

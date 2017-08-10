@@ -5,6 +5,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.context.EnvironmentAware;
@@ -27,7 +28,7 @@ import java.util.Properties;
 
 @Configuration
 @AutoConfigureAfter({ DataSourceConfig.class })
-//@MapperScan(basePackages = { "com.digitalchina.**.mapper"})
+@MapperScan(basePackages = { "com.cat.mapper"})
 @EnableTransactionManagement
 public class MybatisConfig implements EnvironmentAware,TransactionManagementConfigurer {
     private static Log logger = LogFactory.getLog(MybatisConfig.class);
@@ -50,6 +51,7 @@ public class MybatisConfig implements EnvironmentAware,TransactionManagementConf
             properties.setProperty("dialect", propertyResolver.getProperty("dialect"));
             sessionFactory.setConfigurationProperties(properties);
             sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(propertyResolver.getProperty("mapperLocations")));
+            System.out.println(propertyResolver.getProperty("mapperLocations"));
 
             //Interceptor[] plugins = new Interceptor[]{new PaginationInterceptor()};
             //sessionFactory.setPlugins(plugins);
@@ -67,6 +69,7 @@ public class MybatisConfig implements EnvironmentAware,TransactionManagementConf
     }
 
     @Bean(name="transactionManager")
+    @Override
     public PlatformTransactionManager annotationDrivenTransactionManager() {
         return new DataSourceTransactionManager(dataSource);
     }
