@@ -1,5 +1,6 @@
 package com.cat.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.cat.model.bean.User;
 import com.cat.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +24,8 @@ public class UserController {
     public Object TestStr(){
         return "Hello User";
     }
-
     @RequestMapping("/getUserByName")
-    public User getUserByName(){
+    public Object getUserByName(){
         Map<String,String> param = new HashMap<>();
         param.put("username","cat");
 
@@ -35,6 +35,6 @@ public class UserController {
         } catch (Exception e){
             e.printStackTrace();
         }
-        return user;
+        return JSON.toJSON(user);
     }
 }

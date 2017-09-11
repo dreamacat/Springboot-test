@@ -28,7 +28,7 @@ public class IUserDao extends MybatisBaseDao implements UserDao {
 
 	@Override
 	public User findUserByProperty(Map<String, String> params) throws Exception {
-		User user  = findBySqlId("mapper.userMapper.findUserByProperty", params,User.class);
+		User user  = findBySqlId("UserMapper.findUserByProperty", params,User.class);
 		return user;
 	}
 }
