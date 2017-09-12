@@ -1,6 +1,5 @@
 package com.cat.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.cat.model.bean.User;
 import com.cat.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +34,6 @@ public class UserController {
         } catch (Exception e){
             e.printStackTrace();
         }
-        return JSON.toJSON(user);
+        return user;
     }
 }
