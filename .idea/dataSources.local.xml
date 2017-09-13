@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="catdb@106.15.203.235" uuid="79af140e-014c-48ff-83e1-669c44799da9">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="catdb@106.15.203.235" uuid="331d01f7-4bce-469b-9f06-c14a5f009aa5">
+      <database-info product="MySQL" version="5.6.36" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>root</user-name>
+      <introspection-schemas>*:catdb</introspection-schemas>
     </data-source>
   </component>
 </project>

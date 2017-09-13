@@ -1,7 +1,7 @@
 package com.cat.service.user.impl;
 
 import com.cat.dao.user.UserDao;
-import com.cat.model.bean.User;
+import com.cat.model.User;
 import com.cat.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

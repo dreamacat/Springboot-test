@@ -2,7 +2,7 @@ package com.cat.dao.user;
 
 
 
-import com.cat.model.bean.User;
+import com.cat.model.User;
 
 import java.util.Map;
 

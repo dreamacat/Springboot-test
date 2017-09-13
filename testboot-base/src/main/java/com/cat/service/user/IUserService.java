@@ -1,6 +1,6 @@
 package com.cat.service.user;
 
-import com.cat.model.bean.User;
+import com.cat.model.User;
 
 import java.util.Map;
 

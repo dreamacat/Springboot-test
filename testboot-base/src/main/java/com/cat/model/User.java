@@ -1,4 +1,4 @@
-package com.cat.model.bean;
+package com.cat.model;
 
 import lombok.Data;
 

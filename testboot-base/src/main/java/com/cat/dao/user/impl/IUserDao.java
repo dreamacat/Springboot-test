@@ -2,7 +2,7 @@ package com.cat.dao.user.impl;
 
 import com.cat.dao.base.impl.MybatisBaseDao;
 import com.cat.dao.user.UserDao;
-import com.cat.model.bean.User;
+import com.cat.model.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.Map;
