@@ -17,25 +17,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-    /**
-     * SpringBoot默认已经将classpath:/META-INF/resources/和classpath:/META-INF/resources/webjars/映射
-     * 所以该方法不需要重写，如果在SpringMVC中，可能需要重写定义（我没有尝试）
-     * 重写该方法需要 extends WebMvcConfigurerAdapter
-     *
-     */
-//    @Override
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("swagger-ui.html")
-//                .addResourceLocations("classpath:/META-INF/resources/");
-//
-//        registry.addResourceHandler("/webjars/**")
-//                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-//    }
-
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
+                .pathMapping("/")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.cat.controller"))
                 .paths(PathSelectors.any())
@@ -44,7 +30,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("swagger生成api文档")
-                .description("简单优雅的restfun风格，http://blog.csdn.net/forezp")
+                .description("简单优雅的restfun风格，develop分支")
                 .termsOfServiceUrl("http://blog.csdn.net/forezp")
                 .version("1.0")
                 .build();

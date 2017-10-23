@@ -14,4 +14,16 @@ public class StudentDo {
     private String sname;
     private String grade;
     private String major;
+    private int age = 10;
+
+    @Override
+    public String toString() {
+        return "StudentDo{" +
+                "snum='" + snum + '\'' +
+                ", sname='" + sname + '\'' +
+                ", grade='" + grade + '\'' +
+                ", major='" + major + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

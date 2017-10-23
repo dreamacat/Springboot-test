@@ -32,6 +32,7 @@
         <junit.version>4.12</junit.version>
         <lombok.version>1.16.8</lombok.version>
         <swagger.version>2.6.1</swagger.version>
+        <org.mapstruct.version>1.2.0.CR2</org.mapstruct.version>
 
     </properties>
 
@@ -181,6 +182,25 @@
             <scope>test</scope>
             <version>${junit.version}</version>
         </dependency>
+
+            <!--map struct-->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${org.mapstruct.version}</version>
+                <!--<scope>provided</scope>-->
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
