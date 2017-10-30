@@ -3,8 +3,6 @@ package com.cat.model.mapper;
 import com.cat.model.domain.StudentDo;
 import com.cat.model.dto.StudentDto;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
@@ -16,11 +14,11 @@ import java.util.List;
 public interface StudentMapper {
     StudentMapper INSTANCE = Mappers.getMapper(StudentMapper.class);
 
-    @Mappings({
-            @Mapping(source = "entity.snum", target = "num"),
-            @Mapping(source = "entity.sname", target = "name"),
-            @Mapping(target = "age", expression = "java (com.cat.model.dto.StudentDto.formatAge(entity.age))"),
-    })
+//    @Mappings({
+//            @Mapping(source = "entity.snum", target = "num"),
+//            @Mapping(source = "entity.sname", target = "name"),
+//            @Mapping(target = "age", expression = "java (com.cat.model.dto.StudentDto.formatAge(entity.age))"),
+//    })
     StudentDto mapToDto(StudentDo entity);
 
     List<StudentDto> mapToDtoList(List<StudentDo> entity);

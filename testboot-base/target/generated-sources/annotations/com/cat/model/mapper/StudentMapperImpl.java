@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2017-10-20T18:05:40+0800",
+    date = "2017-10-28T21:39:17+0800",
     comments = "version: 1.2.0.CR2, compiler: javac, environment: Java 1.8.0_131 (Oracle Corporation)"
 )
 public class StudentMapperImpl implements StudentMapper {
@@ -20,12 +20,6 @@ public class StudentMapperImpl implements StudentMapper {
         }
 
         StudentDto studentDto = new StudentDto();
-
-        studentDto.setName( entity.getSname() );
-        studentDto.setAge( entity.getAge() );
-        studentDto.setNum( entity.getSnum() );
-        studentDto.setGrade( entity.getGrade() );
-        studentDto.setMajor( entity.getMajor() );
 
         return studentDto;
     }
