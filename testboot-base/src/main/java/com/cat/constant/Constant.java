@@ -8,11 +8,10 @@ public class Constant {
 
     public static final String TEST1= "17612439962";
     public static final String TEST2= "18758826336";
-
-
-
-
     public static final String JD_URL= "http://m.jd.com";
+
+
+    public static final String s = "1";
 
 
 
