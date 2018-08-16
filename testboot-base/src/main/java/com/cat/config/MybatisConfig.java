@@ -37,7 +37,7 @@ public class MybatisConfig implements EnvironmentAware,TransactionManagementConf
 
     @Resource(name = "dataSource")
     private DataSource dataSource;
-
+    @Override
     public void setEnvironment(Environment environment) {
         this.propertyResolver = new RelaxedPropertyResolver(environment, "mybatis.");
     }

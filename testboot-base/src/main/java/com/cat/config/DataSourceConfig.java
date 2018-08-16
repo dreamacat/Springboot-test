@@ -27,8 +27,7 @@ public class DataSourceConfig implements EnvironmentAware {
 //    private Environment env;
     private RelaxedPropertyResolver propertyResolver;
 
-    //private static ILogger log = LoggerFactory.getLogger(DatasourceConfig.class);
-
+    @Override
     public void setEnvironment(Environment env) {
         this.propertyResolver = new RelaxedPropertyResolver(env, "dataSource.");
     }
