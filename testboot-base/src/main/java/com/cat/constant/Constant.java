@@ -12,6 +12,7 @@ public class Constant {
 
 
     public static final String s = "1";
+    public static final String s2 = "2";
 
 
 

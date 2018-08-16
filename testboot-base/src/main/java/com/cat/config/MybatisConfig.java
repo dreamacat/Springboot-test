@@ -1,7 +1,6 @@
 package com.cat.config;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -30,8 +29,8 @@ import java.util.Properties;
 @AutoConfigureAfter({ DataSourceConfig.class })
 @MapperScan(basePackages = { "com.cat.mapper"})
 @EnableTransactionManagement
+@Slf4j
 public class MybatisConfig implements EnvironmentAware,TransactionManagementConfigurer {
-    private static Log logger = LogFactory.getLog(MybatisConfig.class);
 
     private RelaxedPropertyResolver propertyResolver;
 
@@ -57,8 +56,7 @@ public class MybatisConfig implements EnvironmentAware,TransactionManagementConf
             //sessionFactory.setPlugins(plugins);
             return sessionFactory.getObject();
         } catch (Exception e) {
-            logger.warn("Could not confiure mybatis session factory");
-            logger.error(e);
+            log.error("error", e);
             return null;
         }
     }
